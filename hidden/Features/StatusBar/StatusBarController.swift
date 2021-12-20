@@ -19,10 +19,10 @@ class StatusBarController {
     private let separateStatusBar = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     private var alwayHideSeparateStatusBar:NSStatusItem? = nil
     
-    private var normalSeparateStatusBarIconLength: CGFloat { return Preferences.areSeparatorsHidden ? 0 : 20 }
+    private var normalSeparateStatusBarIconLength: CGFloat = 2
     private let collapseSeparateStatusBarIconLength: CGFloat = 10000
     
-    private let normalTerminateStatusBarIconLength: CGFloat = Preferences.alwaysHiddenSectionEnabled ? 20 : 0
+    private let normalTerminateStatusBarIconLength: CGFloat = 2
     private let collapseTerminateStatusBarIconLength: CGFloat = Preferences.alwaysHiddenSectionEnabled ? 10000 : 0
     
     private let imgIconLine = NSImage(named:NSImage.Name("ic_line"))
